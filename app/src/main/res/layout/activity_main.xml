@@ -9,11 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.susan.acnetracker.MainActivity">
 
-    <CalendarView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/calendarView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <include layout="@layout/fragment_calendar">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="layout.CalendarFragment"
+            android:id="@+id/calendar_fragment"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </include>
 
 </RelativeLayout>
